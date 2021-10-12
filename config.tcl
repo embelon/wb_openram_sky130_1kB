@@ -20,8 +20,8 @@ set ::env(SYNTH_DEFINES) "MPRJ_IO_PADS=38"
 ## set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 
 ### Black-box verilog and views
-## set ::env(VERILOG_FILES_BLACKBOX) "\
-	$::env(DESIGN_DIR)/$::env(DESIGN_NAME)/src/wb_openram_sky130_1kB.v"
+set ::env(VERILOG_FILES_BLACKBOX) "\
+	$::env(DESIGN_DIR)/$::env(DESIGN_NAME)/src/sky130_sram_1kbyte_1rw1r_32x256_8.v"
 
 set ::env(EXTRA_LEFS) "\
 	$::env(DESIGN_DIR)/$::env(DESIGN_NAME)/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef"
